@@ -177,6 +177,11 @@ p {
   color: var(--clr-primary-1);
 }
 
+.error-msg{
+  color: var(--clr-red-dark);
+  text-transform: capitalize;
+}
+
 .section {
   padding: 5rem 0;
 }

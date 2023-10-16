@@ -21,6 +21,9 @@ const Login = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        if(!user.userName.length || !user.password.length){
+            return;
+        }
         if (userInfo.userName === "" || userInfo.userName !== user.userName) {
             setError('user does not exist');
             return;

@@ -21,6 +21,9 @@ const Signup = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        if(!userInfo.userName.length || !userInfo.email.length || !userInfo.password.length){
+            return;
+        }
         if (!userInfo.email.includes('@')) {
             setError('incorrect email')
             return;
